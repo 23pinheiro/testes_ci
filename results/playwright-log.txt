@@ -1,0 +1,66 @@
+{"level":30,"time":"2024-07-07T21:25:30.522Z","pid":304131,"hostname":"germano-brendo","msg":"Listening on 45663"}
+(node:304131) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-07-07T21:25:30.640Z","pid":304131,"hostname":"germano-brendo","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-07T21:25:30.640Z","pid":304131,"hostname":"germano-brendo","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-07T21:25:30.642Z","pid":304131,"hostname":"germano-brendo","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-07T21:25:30.642Z","pid":304131,"hostname":"germano-brendo","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-07T21:25:30.645Z","pid":304131,"hostname":"germano-brendo","msg":"Start of node method newBrowser"}
+================= Original suppressed error =================
+browserType.launch: headless: expected boolean, got string
+    at _newBrowser (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:9942:49)
+    at newBrowser (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:10404:33)
+    at PlaywrightServer.newBrowser (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:10691:34)
+    at Object.onReceiveHalfClose (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1347:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:564:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:604:14)
+    at ServerHttp2Stream.<anonymous> (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:372:18)
+=============================================================
+{"level":30,"time":"2024-07-07T21:25:30.648Z","pid":304131,"hostname":"germano-brendo","msg":"Error of node method  newBrowser"}
+{"level":30,"time":"2024-07-07T21:25:30.652Z","pid":304131,"hostname":"germano-brendo","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:8712:11)
+    at takeScreenshot (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:8756:3)
+    at PlaywrightServer.takeScreenshot (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:10691:34)
+    at Object.onReceiveHalfClose (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1347:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:564:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:604:14)
+    at ServerHttp2Stream.<anonymous> (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:372:18)
+    at ServerHttp2Stream.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-07-07T21:25:30.652Z","pid":304131,"hostname":"germano-brendo","msg":"Error of node method  takeScreenshot"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:10062:15)
+    at PlaywrightServer.getActiveBrowser (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:10678:59)
+    at PlaywrightServer.setTimeout (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:10915:57)
+    at Object.onReceiveHalfClose (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1347:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:564:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:604:14)
+    at ServerHttp2Stream.<anonymous> (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:372:18)
+    at ServerHttp2Stream.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-07-07T21:25:30.667Z","pid":304131,"hostname":"germano-brendo","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-07T21:25:30.667Z","pid":304131,"hostname":"germano-brendo","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:10062:15)
+    at PlaywrightServer.getActiveBrowser (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:10678:59)
+    at PlaywrightServer.setTimeout (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:10915:57)
+    at Object.onReceiveHalfClose (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1347:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:564:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:604:14)
+    at ServerHttp2Stream.<anonymous> (/home/germano/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:372:18)
+    at ServerHttp2Stream.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-07-07T21:25:30.671Z","pid":304131,"hostname":"germano-brendo","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-07T21:25:30.671Z","pid":304131,"hostname":"germano-brendo","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-07T21:25:30.688Z","pid":304131,"hostname":"germano-brendo","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-07-07T21:25:30.688Z","pid":304131,"hostname":"germano-brendo","msg":"End of node method closeAllBrowsers"}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.10.12 on linux)" generated="2024-07-07T17:25:30.221091" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/home/germano/Desktop/projetos/testes_ci_github/testes_ci/tests.robot">
+<test id="s1-t1" name="Test Successful Login" line="12">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-07-07T17:25:30.644292" level="INFO">{"browser": "chromium", "headless": "falsee", "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/germano/Desktop/projetos/testes_ci_github/testes_ci/results/browser/traces/d9bbdd1b-a265-4aa0-b3fd-ee688117d1f9"}</msg>
+<msg time="2024-07-07T17:25:30.653079" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2024-07-07T17:25:30.653223" level="INFO">See also file:///home/germano/Desktop/projetos/testes_ci_github/testes_ci/results/playwright-log.txt for additional details.</msg>
+<msg time="2024-07-07T17:25:30.653363" level="FAIL">Error: browserType.launch: headless: expected boolean, got string</msg>
+<arg>chromium</arg>
+<arg>headless=falsee</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="FAIL" start="2024-07-07T17:25:30.643740" elapsed="0.019124">Error: browserType.launch: headless: expected boolean, got string</status>
+</kw>
+<kw name="New Page" owner="Browser">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="NOT RUN" start="2024-07-07T17:25:30.663235" elapsed="0.000067"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<arg>${LOGIN_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="NOT RUN" start="2024-07-07T17:25:30.663486" elapsed="0.000042"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>id=login</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2024-07-07T17:25:30.663847" elapsed="0.000068"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2024-07-07T17:25:30.664052" elapsed="0.000024"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>password</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2024-07-07T17:25:30.664165" elapsed="0.000020"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>id="input-busca"</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2024-07-07T17:25:30.664271" elapsed="0.000019"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-07-07T17:25:30.664367" elapsed="0.000018"/>
+</kw>
+<doc>Teste para verificar login bem-sucedido</doc>
+<tag>login</tag>
+<status status="FAIL" start="2024-07-07T17:25:30.641761" elapsed="0.022789">Error: browserType.launch: headless: expected boolean, got string</status>
+</test>
+<status status="FAIL" start="2024-07-07T17:25:30.221688" elapsed="0.447305"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">login</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-07-07T17:25:30.299378" level="WARN">Imported library '/home/germano/Desktop/projetos/testes_ci_github/testes_ci/load_env.py' contains no keywords.</msg>
+<msg time="2024-07-07T17:25:30.299921" level="ERROR">Error in file '/home/germano/Desktop/projetos/testes_ci_github/testes_ci/tests.robot' on line 9: Setting variable '${PASSWORD}' failed: Resolving variable '${get_env_variable("PASSWORD")}' failed: Variable '${get_env_variable}' not found.</msg>
+<msg time="2024-07-07T17:25:30.300410" level="ERROR">Error in file '/home/germano/Desktop/projetos/testes_ci_github/testes_ci/tests.robot' on line 8: Setting variable '${USERNAME}' failed: Resolving variable '${get_env_variable("USERNAME")}' failed: Variable '${get_env_variable}' not found.</msg>
+</errors>
+</robot>
